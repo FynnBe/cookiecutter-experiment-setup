@@ -1,8 +1,17 @@
 {
   "full_name": "Full Name",
   "email": "Email Address",
-  "github_username": "Destination github org or username",
+  "host": "https://github.com",
+  "host_username": "{{ cookiecutter.host }} username",
   "repo_name": "repository_name",
   "package_name": "{{ cookiecutter.repo_name.lower().replace(' ', '_') }}",
-  "project_short_description": "Short description"
+  "project_short_description": "Short description",
+  "model_repo_name": "dummy_model",
+  "model_host": "{{ cookiecutter.host }}",
+  "model_host_username": "{{ cookiecutter.host_username }}",
+  "model_repo": "{{ cookiecutter.model_host }}/{{ cookiecutter.model_host_username }}/{{ cookiecutter.model_repo_name }}.git",
+  "utils_repo_name": "dummy_utils",
+  "utils_host": "{{ cookiecutter.host }}",
+  "utils_host_username": "{{ cookiecutter.host_username }}",
+  "utils_repo": "{{ cookiecutter.utils_host }}/{{ cookiecutter.utils_host_username }}/{{ cookiecutter.utils_repo_name }}.git"
 }

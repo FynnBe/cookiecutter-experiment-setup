@@ -6,23 +6,17 @@ requirements = [
 ]
 
 setup(
-    name='{{ cookiecutter.repo_name }}',
+    name="{{ cookiecutter.repo_name }}",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="{{ cookiecutter.project_short_description }}",
     author="{{ cookiecutter.full_name.replace('\"', '\\\"') }}",
-    author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
-    packages=['{{ cookiecutter.package_name }}'],
-    entry_points={
-        'console_scripts': [
-            '{{ cookiecutter.package_name }}={{ cookiecutter.package_name }}.cli:cli'
-        ]
-    },
+    author_email="{{ cookiecutter.email }}",
+    url="{{ cookiecutter.host }}/{{ cookiecutter.host_username }}/{{ cookiecutter.repo_name }}",
+    packages=["{{ cookiecutter.package_name }}"],
+    entry_points={"console_scripts": ["{{ cookiecutter.package_name }}={{ cookiecutter.package_name }}.cli:cli"]},
     install_requires=requirements,
-    keywords='{{ cookiecutter.repo_name }}',
-    classifiers=[
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.6',
-    ]
+    keywords="{{ cookiecutter.repo_name }}",
+    license="Apache License 2.0",
+    classifiers=["Programming Language :: Python :: 3.7"],
 )

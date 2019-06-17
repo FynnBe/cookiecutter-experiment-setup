@@ -40,7 +40,7 @@ install:
   - conda install -q pytest pytest-cov conda-build anaconda-client
   - conda info
   # this is to ensure dependencies
-  - conda build conda.recipe --no-test
+  - conda build conda_recipe --no-test
   - conda install --use-local {{ cookiecutter.package_name }}
 
 

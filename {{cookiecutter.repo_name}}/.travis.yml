@@ -18,7 +18,7 @@ install:
   - conda update -q conda
   - conda install conda-build anaconda-client pytest pytest-cov
   - conda config --set auto_update_conda no
-  - conda build conda.recipe --no-test
+  - conda build conda_recipe --no-test
   - conda install --use-local {{ cookiecutter.package_name }}
   - conda info -a
 script:

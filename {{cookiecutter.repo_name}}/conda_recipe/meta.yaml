@@ -11,7 +11,7 @@ package:
   {%- endraw %}
 
 source:
-  path: ..
+  git_url: ..
 
 build:
   # If the installation is complex, or different between Unix and Windows, use
@@ -44,5 +44,5 @@ test:
     - pytest tests
 
 about:
-  home: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+  home: https://{{ cookiecutter.host }}/{{ cookiecutter.host_username }}/{{ cookiecutter.repo_name }}
   summary: {{ cookiecutter.project_short_description }}

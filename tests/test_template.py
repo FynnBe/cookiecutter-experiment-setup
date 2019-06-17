@@ -7,11 +7,16 @@ def context():
     return {
         "full_name": "test name",
         "email": "test@email.com",
-        "github_username": "test_username",
+        "host": "host_name",
+        "host_username": "host_username",
         "repo_name": "test_repo",
         "package_name": "test_repo",
         "project_short_description": "Test description.",
-        "version": "0.1.0"
+        "version": "0.1.0",
+        "model_repo_name": "test models name",
+        "model_repo": "test models repo",
+        "utils_repo_name": "test utils name",
+        "utils_repo": "test utils repo"
     }
 
 
